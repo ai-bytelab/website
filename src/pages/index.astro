@@ -1,236 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+import Layout from '../layouts/Layout.astro';
+import ContactBar from '../components/ContactBar.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
 
-<head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNBRGFSMC4"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+<Layout title="ByteLab">
 
-		gtag('config', 'G-QNBRGFSMC4');
-	</script>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="theme-color" content="#606de2" />
-	<meta name="description"
-		content="We specialize in digitizing documents and centralizing them to enable easy access and global search. Your documents' security is of utmost important to us. We focus on quality and using latest technologies like AI to convert your paper workflows into digital ones." />
-	<meta charset="UTF-8">
-	<meta property="og:title" content="ByteLab | Digitize and centralize documents" />
-	<meta property="og:type" content="website" />
-	<!-- <meta property="og:image" content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg" /> -->
-	<meta property="og:url" content="https://bytelab.ai" />
-	<meta property="twitter:card" content="summary_large_image" />
-	<!-- <meta property="twitter:image" content="https://res.cloudinary.com/fay/image/upload/w_1280,h_640,c_fill,q_auto,f_auto/w_860,c_fit,co_rgb:232129,g_west,x_80,y_-60,l_text:Source%20Sans%20Pro_70_line_spacing_-10_semibold:Anyone%20Can%20Map!%20Inspiration%20and%20an%20introduction%20to%20the%20world%20of%20mapping/blog-social-card-1.1" /> -->
-	<meta property="twitter:site" content="@Bytelab_ai" />
-
-	<link rel="shortcut icon" href="./favicon.png" />
-
-	<title>ByteLab | Digitize and centralize documents</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Raleway:600,700,900%7cLato" rel="stylesheet" />
-
-	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
-	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
-	<link rel="stylesheet" href="assets/css/theme.min.css" />
-	<link rel="stylesheet" href="assets/css/themes/virtus-5.css" />
-
-	<link rel="stylesheet" type="text/css" href="./assets/vendors/revolution/css/settings.css" />
-	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-
-	<!-- Head Libs -->
-	<script async src="assets/vendors/modernizr.min.js"></script>
-</head>
-
-<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="classic"
-	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-	<div id="wrap">
 		<header class="main-header bg-white">
-			<div class="secondarybar-wrap bb-gray">
-				<div class="container secondarybar-container">
-					<div class="secondarybar">
-						<div class="row secondarybar-row align-items-center">
-							<div class="col-auto">
-								<div class="header-module">
-									<div class="iconbox iconbox-inline iconbox-xs">
-										<div class="iconbox-icon-wrap">
-											<span class="iconbox-icon-container">
-												<i class="icon-ion-ios-call"></i>
-											</span>
-										</div>
-										<!-- /.iconbox-icon-wrap -->
-										<h3 class="font-size-14">Phone: +91-989-384-4539, +91-989-337-0027</h3>
-									</div>
-									<!-- /.iconbox -->
-								</div>
-								<!-- /.header-module -->
-
-								<div class="header-module">
-									<div class="iconbox iconbox-inline iconbox-xs">
-										<div class="iconbox-icon-wrap">
-											<span class="iconbox-icon-container">
-												<i class="icon-md-mail"></i>
-											</span>
-										</div>
-										<!-- /.iconbox-icon-wrap -->
-										<h3 class="font-size-14">Mail: info@bytelab.ai</h3>
-									</div>
-									<!-- /.iconbox -->
-								</div>
-								<!-- /.header-module -->
-
-
-								<div class="header-module">
-									<a aria-label="Chat on WhatsApp" href="https://wa.me/9893844539"> <img
-											alt="Chat on WhatsApp" src="assets/images/WhatsAppButtonGreenSmall.svg" />
-
-								</div>
-								<!-- /.col -->
-							</div>
-							<div class="col text-right">
-								<div class="header-module">
-									<ul class="social-icon social-icon-md">
-
-										<li>
-											<a href="https://www.linkedin.com/company/bytelab-ai" target="_blank"><i
-													class="fa fa-linkedin"></i></a>
-										</li>
-										<li>
-											<a href="https://twitter.com/Bytelab_ai" target="_blank"><i
-													class="fa fa-twitter"></i></a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/bytelab.ai/" target="_blank"><i
-													class="fa fa-instagram"></i></a>
-										</li>
-									</ul>
-								</div>
-								<!-- /.header-module -->
-							</div>
-							<!-- /.col -->
-						</div>
-						<!-- /.secondarybar-row -->
-					</div>
-					<!-- /.secondarybar -->
-				</div>
-				<!-- /.secondarybar-container -->
-			</div>
-			<!-- /.secondarybar-wrap -->
-
-			<div class="mainbar-wrap">
-				<div class="container mainbar-container">
-					<div class="mainbar">
-						<div class="row mainbar-row align-items-lg-stretch">
-							<div class="col">
-								<div class="navbar-header">
-									<a class="navbar-brand" href="#" rel="home">
-										<span
-											class="navbar-brand-inner  font-size-22 text-uppercase ltr-sp-1 text-primary lqd-unit-animation-done">
-											ByteLab
-										</span>
-									</a>
-									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile"
-										data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false"
-										data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
-										<span class="sr-only">Toggle navigation</span>
-										<span class="bars">
-											<span class="bar"></span>
-											<span class="bar"></span>
-											<span class="bar"></span>
-										</span>
-									</button>
-								</div>
-								<!-- /.navbar-header -->
-							</div>
-							<!-- /.col -->
-
-							<div class="col text-right">
-								<div class="collapse navbar-collapse" id="main-header-collapse" aria-expanded="false"
-									role="tablist">
-									<ul id="primary-nav"
-										class="main-nav ld_header_menu_5c51ac47950e6 nav align-items-lg-stretch justify-content-lg-end"
-										data-submenu-options='{ "toggleType": "fade", "handler": "mouse-in-out" }'>
-										<li>
-											<a href="#">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Home</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#about">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">About</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#services">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Services</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href="#wcs">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Why choose us?</span>
-												</span>
-											</a>
-										</li>
-
-										<li>
-											<a href="#contact">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Contact</span>
-												</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<!-- /.collapse -->
-
-								<div class="header-module">
-									<!-- <a href="#" target="_blank" class="btn btn-solid btn-sm semi-round border-thin fresco px-1 font-size-12 lh-15 font-weight-bold text-uppercase ltr-sp-1 round">
-										<span>
-											<span class="btn-txt"></span>
-										</span>
-									</a>
-									 -->
-								</div>
-								<!-- /.header-module -->
-
-
-								<!-- /.header-module -->
-							</div>
-							<!-- /.col -->
-						</div>
-						<!-- /.maonbar-row -->
-					</div>
-					<!-- /.mainbar -->
-				</div>
-				<!-- /.mainbar-container -->
-			</div>
-			<!-- /.mainbar-wrap -->
+			<ContactBar />
+			<Navbar />
 		</header>
 
 		<main id="content" class="content">
 			<section class="vc_row pt-100 pb-110 bg-cover" data-parallax="true"
 				data-parallax-options='{"parallaxBG": true}'
-				data-row-bg="assets/images/wepik-export-20230426182842.png">
+				data-row-bg="/images/wepik-export-20230426182842.png">
 				<span class="row-bg-loader"></span>
 
 				<div class="container" id="services">
@@ -369,7 +154,7 @@
 					<div class="row mx-0 d-md-flex flex-wrap align-items-stretch">
 						<div class="lqd-column col-lg-6 col-xs-12 visible-lg px-0 bg-cover" data-parallax="true"
 							data-parallax-options='{"parallaxBG": true}'
-							style="background-image: url(./assets/images/paperwork_s.jpg)">
+							style="background-image: url(/images/paperwork_s.jpg)">
 						</div>
 						<!-- /.lqd-column col-lg-6 px-0 -->
 
@@ -439,7 +224,7 @@
 
 						<div class="lqd-column col-lg-6 col-xs-12 visible-lg px-0 bg-cover" data-parallax="true"
 							data-parallax-options='{"parallaxBG": true}'
-							style="background-image: url(./assets/images/messy-office.jpg)">
+							style="background-image: url(/images/messy-office.jpg)">
 						</div>
 						<!-- /.lqd-column col-lg-6 px-0 -->
 					</div>
@@ -731,132 +516,6 @@
 		</main>
 		<!-- /#content.content -->
 
-		<footer class="main-footer" data-sticky-footer="false">
-			<section>
-				<div class="container">
-					<div class="row d-flex flex-wrap">
-						<div class="lqd-column col-md-6 col-sm-6">
-							<span
-								class="navbar-brand-inner  font-size-22 text-uppercase ltr-sp-1 text-primary lqd-unit-animation-done">
-								ByteLab,
-							</span>
-							<p class="mt-20">
-								established in 2023,It is a Bhopal-based enterprise. We enable
-								migration from traditional, paper-based practices to modern, digital workflows through
-								the strategic application of advanced technologies such as Artificial Intelligence and
-								Machine Learning. We help our clients succeed by creating
-								digital experiences.
-							</p>
+	
 
-							<ul class="social-icon social-icon-lg">
-								<li>
-									<a href="https://www.linkedin.com/company/bytelab-ai" target="_blank"><i
-											class="fa fa-linkedin"></i></a>
-								</li>
-								<li>
-									<a href="https://twitter.com/Bytelab_ai" target="_blank"><i
-											class="fa fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/bytelab.ai/" target="_blank"><i
-											class="fa fa-instagram"></i></a>
-								</li>
-							</ul>
-						</div>
-						<!-- /.col-md-3 -->
-
-						<!-- <div class="lqd-column col-md-4 col-sm-6">
-                <h3
-                  class="widget-title mb-30 text-white font-size-15 text-uppercase ltr-sp-2"
-                >
-                  Useful Links
-                </h3>
-                <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
-                  <li class="mb-1"><a href="#" target="_blank">Pricing</a></li>
-                  <li class="mb-1">
-                    <a href="#" target="_blank">Content Management</a>
-                  </li>
-                  <li class="mb-1"><a href="#" target="_blank">Tracking</a></li>
-                  <li class="mb-1">
-                    <a href="#" target="_blank">Report a Bug</a>
-                  </li>
-                  <li class="mb-1">
-                    <a href="#" target="_blank">Customization</a>
-                  </li>
-                  <li class="mb-1">
-                    <a href="#" target="_blank">Terms of Services</a>
-                  </li>
-                </ul>
-              </div> -->
-						<!-- /.col-md-3 -->
-
-						<div class="lqd-column col-md-6 col-sm-6" id="contact">
-							<h3 class="widget-title mb-30 text-white font-size-15 text-uppercase ltr-sp-2">
-								Contact Us
-							</h3>
-							<p> Please leave a message or send us an email, and we will get back to you.</p>
-							<div class="header-module">
-								<a aria-label="Chat on WhatsApp" href="https://wa.me/9893844539"> <img
-										alt="Chat on WhatsApp" src="assets/images/WhatsAppButtonGreenSmall.svg" />
-
-							</div>
-							<br>
-							<br>
-							<p>
-								Email: info@bytelab.ai
-								<br />
-
-								Address: ByteLab,
-								G-Star, Sagar Royal Villas, near Ashima Mall, Bhopal, Madhya Pradesh 462026
-
-								<br />
-								Phone: +91-989-384-4539, +91-989-337-0027
-							</p>
-						</div>
-						<!-- /.col-md-3 -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container -->
-			</section>
-
-			<section class="pt-35 pb-35 mt-70">
-				<div class="container bt-fade-white-01 pt-35 pb-0">
-					<div class="row">
-						<div class="lqd-column col-md-6">
-							<ul class="lqd-custom-menu reset-ul inline-nav">
-								<li><a href="#about">About us</a></li>
-								<li><a href="#wwd">Who We do? </a></li>
-								<li><a href="#wcs">Why choose us? </a></li>
-								<li><a href="#services">Services</a></li>
-
-
-							</ul>
-						</div>
-						<!-- /.col-md-6 -->
-
-						<div class="lqd-column col-md-6 text-md-right">
-							<p class="my-0 font-size-15 text-fade-white-08">
-								ByteLab © Copyright 2023.
-							</p>
-						</div>
-						<!-- /.col-md-6 text-md-right -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container -->
-			</section>
-		</footer>
-		<!-- /.main-footer -->
-	</div>
-	<!-- /#wrap -->
-
-
-	<script src="./assets/vendors/jquery.min.js"></script>
-	<script src="./assets/js/theme-vendors.js"></script>
-	<script src="./assets/js/theme.min.js"></script>
-	<!-- <script src="./assets/js/liquidAjaxContactForm.min.js"></script>
-	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script> -->
-</body>
-
-</html>
+</Layout>

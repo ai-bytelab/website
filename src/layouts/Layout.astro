@@ -1,0 +1,81 @@
+---
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNBRGFSMC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QNBRGFSMC44");
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="We specialize in digitizing documents and centralizing them to enable easy access and global search. Your documents' security is of utmost important to us. We focus on quality and using latest technologies like AI to convert your paper workflows into digital ones."
+    />
+    <meta charset="UTF-8" />
+    <meta
+      property="og:title"
+      content="ByteLab | Digitize and centralize documents"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg" /> -->
+    <meta property="og:url" content="https://bytelab.ai" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- <meta property="twitter:image" content="https://res.cloudinary.com/fay/image/upload/w_1280,h_640,c_fill,q_auto,f_auto/w_860,c_fit,co_rgb:232129,g_west,x_80,y_-60,l_text:Source%20Sans%20Pro_70_line_spacing_-10_semibold:Anyone%20Can%20Map!%20Inspiration%20and%20an%20introduction%20to%20the%20world%20of%20mapping/blog-social-card-1.1" /> -->
+    <meta property="twitter:site" content="@Bytelab_ai" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:600,700,900%7cLato"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/vendors/liquid-icon/liquid-icon.min.css" />
+    <link
+      rel="stylesheet"
+      href="/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/vendors/theme/theme-vendors.min.css" />
+    <link rel="stylesheet" href="/vendors/theme/theme.min.css" />
+    <link rel="stylesheet" href="/vendors/theme/virtus-5.css" />
+
+    <title>{title}</title>
+  </head>
+  <body
+    data-mobile-nav-trigger-alignment="right"
+    data-mobile-nav-align="left"
+    data-mobile-nav-style="classic"
+    data-mobile-nav-shceme="gray"
+    data-mobile-header-scheme="gray"
+    data-mobile-nav-breakpoint="1199"
+  >
+    <div id="wrap">
+      <slot />
+	  <Footer />
+    </div>
+
+    <script is:inline src="/vendors/jquery.min.js"></script>
+    <script is:inline src="/vendors/theme/theme-vendors.js"></script>
+    <script is:inline src="/vendors/theme/theme.min.js"></script>
+  </body>
+</html>
