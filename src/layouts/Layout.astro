@@ -1,5 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
 
 export interface Props {
@@ -43,39 +44,69 @@ const { title } = Astro.props;
     <meta property="twitter:site" content="@Bytelab_ai" />
     <meta name="generator" content={Astro.generator} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
+    <!-- GOOGLE FONTS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway:600,700,900%7cLato"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/vendors/liquid-icon/liquid-icon.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FONT ICONS -->
+    <link href="/css/flaticon.css" rel="stylesheet" />
+
+    <!-- PLUGINS STYLESHEET -->
+    <link href="/css/menu.css" rel="stylesheet" />
     <link
+      id="effect"
+      href="/css/dropdown-effects/fade-down.css"
+      media="all"
       rel="stylesheet"
-      href="/vendors/font-awesome/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="/vendors/theme/theme-vendors.min.css" />
-    <link rel="stylesheet" href="/vendors/theme/theme.min.css" />
-    <link rel="stylesheet" href="/vendors/theme/virtus-5.css" />
+    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- ON SCROLL ANIMATION -->
+    <link href="/css/animate.css" rel="stylesheet" />
+
+    <!-- TEMPLATE CSS -->
+    <link href="/css/blue-theme.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/fontawesome-6.4.0-web//css/all.css" />
+    <!-- RESPONSIVE CSS -->
+    <link href="css/responsive.css" rel="stylesheet" />
 
     <title>{title}</title>
   </head>
-  <body
-    data-mobile-nav-trigger-alignment="right"
-    data-mobile-nav-align="left"
-    data-mobile-nav-style="classic"
-    data-mobile-nav-shceme="gray"
-    data-mobile-header-scheme="gray"
-    data-mobile-nav-breakpoint="1199"
-  >
-    <div id="wrap">
+  <body>
+    <div id="page" class="page font--jakarta">
+     
+      <Navbar />
       <slot />
-	  <Footer />
+      <Footer />
     </div>
+    <!-- EXTERNAL SCRIPTS
+		============================================= -->
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/modernizr.custom.js"></script>
+    <script src="/js/jquery.easing.js"></script>
+    <script src="/js/jquery.appear.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/wow.js"></script>
 
-    <script is:inline src="/vendors/jquery.min.js"></script>
-    <script is:inline src="/vendors/theme/theme-vendors.js"></script>
-    <script is:inline src="/vendors/theme/theme.min.js"></script>
+    <!-- Custom Script -->
+    <script src="/js/custom.js"></script>
   </body>
 </html>
