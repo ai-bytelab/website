@@ -249,11 +249,11 @@ section,
 /*  BACKGROUND COLORS
 /*------------------------------------------*/
 
-.bg--white-500 { background-color: #f2f4f8; }
-.bg--white-400 { background-color: #f4f4f9; }
-.bg--white-300 { background-color: #f7f8f9; }
-.bg--white-200 { background-color: #fbfbfd; }
-.bg--white-100 { background-color: #fff; }
+.bg--white-500 { background-color: aliceblue; }
+.bg--white-400 { background-color: aliceblue; }
+.bg--white-300 { background-color: aliceblue; }
+.bg--white-200 { background-color: aliceblue; }
+.bg--white-100 { background-color: aliceblue; }
 
 .bg--black-500 { background-color: #22223b; }
 .bg--black-400 { background-color: #2e3648; }

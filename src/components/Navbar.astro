@@ -8,7 +8,7 @@ const currentPath = Astro.url.pathname.slice(1);
         <div class="wsmobileheader clearfix">
             <span class="smllogo"
                 ><img
-                    src="images/logo/blue-black/blue.png"
+                    src="/images/logo/blue-black/blue.png"
                     alt="mobile-logo"
                 /></span
             >
@@ -22,7 +22,7 @@ const currentPath = Astro.url.pathname.slice(1);
                 <div class="desktoplogo">
                     <a href="/index.html" class="logo-black"
                         ><img
-                            src="images/logo/blue-black/blue.png"
+                            src="/images/logo/blue-black/blue.png"
                             alt="logo"
                         /></a
                     >
@@ -32,7 +32,7 @@ const currentPath = Astro.url.pathname.slice(1);
                 <div class="desktoplogo">
                     <a href="/index.html" class="logo-white"
                         ><img
-                            src="images/logo/blue-black/blue.png"
+                            src="/images/logo/blue-black/blue.png"
                             alt="logo"
                         /></a
                     >
@@ -83,16 +83,7 @@ const currentPath = Astro.url.pathname.slice(1);
                                 ></a
                             >
                         </li>
-                        <li class="nl-simple">
-                            <a href="/faqs.html" class="h-link"
-                                ><span
-                                    class={currentPath === "faqs.html"
-                                        ? "active"
-                                        : ""}
-                                    data-content="FAQs">FAQs</span
-                                ></a
-                            >
-                        </li>
+                    
                         <li class="nl-simple">
                             <a href="/contacts.html" class="h-link"
                                 ><span
