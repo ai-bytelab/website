@@ -20,7 +20,7 @@ const currentPath = Astro.url.pathname.slice(1);
             <div class="wsmainwp clearfix">
                 <!-- HEADER BLACK LOGO -->
                 <div class="desktoplogo">
-                    <a href="/index.html" class="logo-black"
+                    <a href="/" class="logo-black"
                         ><img
                             src="/images/logo/blue-black/blue.png"
                             alt="logo"
@@ -30,7 +30,7 @@ const currentPath = Astro.url.pathname.slice(1);
 
                 <!-- HEADER WHITE LOGO -->
                 <div class="desktoplogo">
-                    <a href="/index.html" class="logo-white"
+                    <a href="/index" class="logo-white"
                         ><img
                             src="/images/logo/blue-black/blue.png"
                             alt="logo"
@@ -44,9 +44,9 @@ const currentPath = Astro.url.pathname.slice(1);
 
                         <!-- SIMPLE NAVIGATION LINK -->
                         <li class="nl-simple">
-                            <a href="/index.html" class="h-link"
+                            <a href="/" class="h-link"
                                 ><span
-                                    class={currentPath === "index.html"
+                                    class={currentPath === ""
                                         ? "active"
                                         : ""}
                                     data-content="Home">Home</span
@@ -54,9 +54,9 @@ const currentPath = Astro.url.pathname.slice(1);
                             >
                         </li>
                         <li class="nl-simple">
-                            <a href="/about.html" class="h-link"
+                            <a href="/about" class="h-link"
                                 ><span
-                                    class={currentPath === "about.html"
+                                    class={currentPath === "about"
                                         ? "active"
                                         : ""}
                                     data-content="About">About</span
@@ -64,9 +64,9 @@ const currentPath = Astro.url.pathname.slice(1);
                             >
                         </li>
                         <li class="nl-simple">
-                            <a href="/services.html" class="h-link"
+                            <a href="/services" class="h-link"
                                 ><span
-                                    class={currentPath === "services.html"
+                                    class={currentPath === "services"
                                         ? "active"
                                         : ""}
                                     data-content="Services">Services</span
@@ -74,9 +74,9 @@ const currentPath = Astro.url.pathname.slice(1);
                             >
                         </li>
                         <li class="nl-simple">
-                            <a href="/blog.html" class="h-link"
+                            <a href="/blog" class="h-link"
                                 ><span
-                                    class={currentPath === "blog.html"
+                                    class={currentPath === "blog"
                                         ? "active"
                                         : ""}
                                     data-content="Blog">Blog</span
@@ -85,9 +85,9 @@ const currentPath = Astro.url.pathname.slice(1);
                         </li>
                     
                         <li class="nl-simple">
-                            <a href="/contacts.html" class="h-link"
+                            <a href="/contacts" class="h-link"
                                 ><span
-                                    class={currentPath === "contacts.html"
+                                    class={currentPath === "contacts"
                                         ? "active"
                                         : ""}
                                     data-content="Contact Us">Contact Us</span
