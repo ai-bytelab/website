@@ -249,11 +249,11 @@ section,
 /*  BACKGROUND COLORS
 /*------------------------------------------*/
 
-.bg--white-500 { background-color: #f2f4f8; }
-.bg--white-400 { background-color: #f4f4f9; }
-.bg--white-300 { background-color: #f7f8f9; }
-.bg--white-200 { background-color: #fbfbfd; }
-.bg--white-100 { background-color: #fff; }
+.bg--white-500 { background-color: aliceblue; }
+.bg--white-400 { background-color: aliceblue; }
+.bg--white-300 { background-color: aliceblue; }
+.bg--white-200 { background-color: aliceblue; }
+.bg--white-100 { background-color: aliceblue; }
 
 .bg--black-500 { background-color: #22223b; }
 .bg--black-400 { background-color: #2e3648; }
@@ -8001,13 +8001,14 @@ span.release-date span {
 /*------------------------------------------*/
 
 .post-tag {
-  display: block;
+  display: inline;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-right: 1rem;
 }
 
 #single-post .post-tag {
