@@ -636,7 +636,7 @@ p.p-xl { font-size: 1.2rem; }      /* 19.2px */
 /*------------------------------------------*/
 
 a {
-  color: #6c757d;
+  color: #000000;
   text-decoration: none;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -646,7 +646,7 @@ a {
 }
 
 a:hover {
-  color: #353f4f!important;
+  color: #0071e3!important;
   text-decoration: none;
 }
 
