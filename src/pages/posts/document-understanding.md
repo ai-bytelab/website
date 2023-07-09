@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/blog-layout.astro
 title: "Document Understanding: AI Automation and Intelligent Extraction."
-pubDate: "July 10, 2023"
+pubDate: "Jul 10, 2023"
 description: "In today's digital era, managing a multitude of documents can be overwhelming. But fear not, as we unveil how Document Understanding, combined with the magic of AI, revolutionizes document processing."
 author: "Mahendra Parmar"
 image:
