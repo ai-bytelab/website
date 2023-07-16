@@ -25,13 +25,13 @@ const { frontmatter } = Astro.props;
               <!-- Post Meta -->
               <div class="blog-post-meta mt-35">
                 <ul class="post-meta-list ico-10">
-                  <li><p class="p-md w-500">By {frontmatter.author} </p></li>
+                  <li><p class="p-md w-500">By {frontmatter.author}</p></li>
                   <li class="meta-list-divider">
-										<p>
-											<span class="flaticon-minus"></span>
-										</p>
-									</li>
-									<li><p class="w-500">ByteLab.AI</p></li>
+                    <p>
+                      <span class="flaticon-minus"></span>
+                    </p>
+                  </li>
+                  <li><p class="w-500">ByteLab.AI</p></li>
                   <li class="meta-list-divider">
                     <p><span class="flaticon-minus"></span></p>
                   </li>
@@ -62,12 +62,11 @@ const { frontmatter } = Astro.props;
           <div class="row justify-content-center">
             <!-- SINGLE POST CONTENT -->
             <div class="col-xl-9">
-
-            <!-- SINGLE POST TEXT -->
-            <div class="single-post-txt">
-              <slot />
+              <!-- SINGLE POST TEXT -->
+              <div class="single-post-txt">
+                <slot />
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -76,3 +75,9 @@ const { frontmatter } = Astro.props;
   <!-- DIVIDER LINE -->
   <hr class="divider" />
 </Layout>
+
+<style>
+  ul{
+    list-style: disc !important;
+  }
+</style>
