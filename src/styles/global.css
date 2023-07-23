@@ -39,4 +39,5 @@ html {
 
 .single-post-txt ul {
   list-style: disc !important;
+  padding-left: 2rem!important;
 }
